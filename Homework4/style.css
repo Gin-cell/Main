@@ -1,0 +1,23 @@
+.title
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 150px;
+}
+.layout { width: 100%; }
+   .layout TD { vertical-align: top; padding: 5px; }
+   .col1 {
+    width: 150px; 
+    background: rgb(241, 156, 156); 
+   }
+   .col2 {
+    background: #f884ab; 
+   }
+   .col3
+   {
+       width: 200px; 
+       background-color: gray;
+       text-align: center;
+   }
