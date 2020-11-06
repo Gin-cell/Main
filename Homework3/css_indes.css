@@ -1,0 +1,46 @@
+h1 
+{
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+.sunset 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: min-content;
+}
+.s1 
+{
+    text-decoration: underline;
+    color: red;
+    font-style: italic;
+}
+.s2
+{
+    font-weight: bold;
+}
+.s3
+{
+    color: blue;
+    font-weight: bold;
+}
+.container
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.car 
+{
+    color: black;
+    border: 5px dashed black;
+}
+.footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
