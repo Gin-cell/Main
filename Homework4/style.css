@@ -6,6 +6,14 @@
     width: 100%;
     height: 150px;
 }
+.nav
+{
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.nav TD { vertical-align: top; padding: 5px; }
 .layout { width: 100%; }
    .layout TD { vertical-align: top; padding: 5px; }
    .col1 {
@@ -18,6 +26,9 @@
    .col3
    {
        width: 200px; 
-       background-color: gray;
+       background: gray;
        text-align: center;
    }
+.ya1 {
+    background: green;
+}
