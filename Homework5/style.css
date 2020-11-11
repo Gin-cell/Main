@@ -1,6 +1,6 @@
-body {background-color: black;}
+body {background-color: black;} /*используй единый стиль написания стилей*/
 .wrapper {max-width: 1140;
-    color: white; 
+    color: white; /*используй HEX коды цветов*/
     display: flex;
     margin: 0 auto;
 }
@@ -9,9 +9,9 @@ body {background-color: black;}
     text-align: center;
     padding: 15px;
 }
-.title { font-family: 'Raleway' sans-serif;}
-.disc {font-family: 'Raleway', sans-serif;
-padding: 25px;
+.title { font-family: 'Raleway' sans-serif;} /* пропустил запятую*/
+.disc {font-family: 'Raleway', sans-serif; /*используй единый стиль написания стилей*/
+padding: 25px; 
 
 }
 
