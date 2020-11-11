@@ -1,0 +1,35 @@
+body {background-color: black;}
+.wrapper {max-width: 1140;
+    color: white; 
+    display: flex;
+    margin: 0 auto;
+}
+.boxes {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+.title { font-family: 'Raleway' sans-serif;}
+.disc {font-family: 'Raleway', sans-serif;
+padding: 25px;
+
+}
+
+.wrapper2 {
+    max-width: 1140;
+    text-align: center;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+.we {color: white;
+    border-bottom: 2px solid white;
+    padding: 15px;
+}
+i {
+    color: white;
+    padding: 4%;
+}
+footer {
+    color: white;
+    padding-top: 20%;
+}
