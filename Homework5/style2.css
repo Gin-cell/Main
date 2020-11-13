@@ -1,0 +1,42 @@
+body {background-color: white;}
+.wrapper {max-width: 1100;
+    color: black; 
+    display: flex;
+    margin: 0 auto;
+}
+.boxes {
+    flex: 1;
+    text-align: center;
+    padding-top: 56px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.title {
+    padding-top: 20px; margin: 0 auto;}
+.disc {margin: 0 auto;
+    width: 240px;
+padding: 23px;
+}
+.icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    border: 1px blue solid;
+    border-radius: 50%;
+    background-color: white;
+}
+.icon:hover
+{
+    background-color: #2a69a6;
+}
+i {
+    color: #2a69a6;
+
+}
+.icon:hover i{
+    color: white;
+}
