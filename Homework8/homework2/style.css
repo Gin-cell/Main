@@ -1,0 +1,46 @@
+body {background-color: #e2e7ec;}
+
+.container {
+    margin: 0 auto;
+    background-color: #e2e7ec;
+    display: flex;
+    max-height: 1100px;
+    max-width: 1120px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("main.png");
+    height: 540px;
+    width: 732px;
+}
+.news {
+    position: relative;
+    background-color: white;
+    height: 540px;
+    width:  360px;
+}
+.main, .news {margin: 5px;}
+.date, .disc, .circle, .discw, .datew{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.datew {
+    font-size: 15px; 
+    color: white;
+}
+.discw {
+    font-family: 'Goldman', cursive; 
+    font-size: 25px; 
+    color: white;}
+.date {font-size: 15px; color: gray;}
+.disc {
+    font-family: 'Goldman', cursive; font-size: 25px;}
+.circle {
+    position:absolute; 
+    bottom:0;
+    padding-bottom: 25px;
+}
