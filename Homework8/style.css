@@ -1,0 +1,28 @@
+body {background-color: #fdde7e;}
+
+.container {display: flex;
+height: 600px;
+background-color: #fdde7e;
+justify-content: space-around;
+align-items: center;
+max-width: 1200vw;}
+
+.top, .midle, .bot {
+    margin: 6px;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+}
+.midle {height: 500px;}
+.top, .bot {height: 442px;}
+
+h1 {font-size: 53px; color: green;}
+.gold {padding-top: 40px;}
+h2 {
+    font-family: 'Dosis', sans-serif; 
+    font-size: 67px; 
+    margin: 0px;
+    padding-top: 5px;
+}
+
+p {font-family: 'Lato', sans-serif; font-size: 18px;}

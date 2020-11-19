@@ -1,0 +1,58 @@
+header {text-align: center;}
+
+body {background-color: #3399cc ;}
+
+.table:hover li:not(:hover) {opacity:0.6; }
+.table {
+    list-style: none; 
+    text-align: center;
+    width: 985px;
+    height: 625px;
+    font-size: 0;
+    padding: 0px;
+    margin: 0 auto;
+    background-color: #3399cc;
+    border: 10px solid darkblue;
+}
+
+li {
+    color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 25px;
+    height: 157px;
+    border: 2px solid white;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.first {width: 50%; background-color: #3399cc;
+     border-left: solid white 4px;
+     border-top: solid white 4px;}
+.sec {width: 25%; background-color: #33cccc;
+    border-top: solid white 4px;}
+.thr {width: 25%; background-color: #996699;
+    border-right: solid white 4px;
+    border-top: solid white 4px;}
+
+.Moscow {width: 25%; background-color: #c24747;
+    border-left: solid white 4px;}
+.Tel {width: 25%; background-color: #e2674a;}
+.Cair {width: 25%; background-color: #ffcc66;}
+.NY {width: 25%; background-color: #99cc99;
+    border-right: solid white 4px;}
+
+.New {width: 25%; background-color: #669999;
+    border-left: solid white 4px;}
+.San {width: 50%; background-color: #cc6699;}
+.Tok {width: 25%; background-color: #339966;
+    border-right: solid white 4px;}
+
+.Syd {width: 100%; background-color: #666699;
+    border-left: solid white 4px;
+    border-right: solid white 4px;
+    border-bottom: solid white 4px;}
+
+p {color: rgb(216, 216, 216);}
+footer {text-align: center; font-size: 30px; color: white;}
