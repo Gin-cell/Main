@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url(Lato-Light.ttf);
+}
+article {margin: 5 auto; text-align: center;}
+h1 {
+    font-family: 'Lato-bold', sans-serif;
+    font-size: 26px;
+    letter-spacing: 9px;
+}
+h4 {
+    width: 570px; 
+    font-family: 'Lato-light', sans-serif;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+.row {
+    display: flex;
+    height: 325px;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+
+.first, .second, .third, .forth {
+    perspective: 1000px;
+    width: 270px;
+    margin: 15px;
+}
+img {
+    width: 270px;
+    height: 268px;
+    z-index: 1;
+}
+.name {font-family: 'Lato-bold', sans-serif;}
+.prof {font-family: 'Lato-light', sans-serif;}
+
+.contacts {
+    display: flex;
+    position: absolute;
+    background-color: #2ca8c6;
+    width: 270px;
+    height: 268px;
+    opacity: 0;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.hov:hover>img{
+transform: rotateY(-90deg);
+-webkit-transition-duration: 1s;
+}
+.hov:hover>.contacts {opacity: 1;}
