@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Lato_Bold;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato_Reg;
+    src: url(/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato_Light;
+  src: url(/fonts/Lato-Light.ttf);
+}
+
+body { margin: 0;}
+.preview {
+    background-image: url("/img/hero-bg.jpg.png");
+    background-size: 100% 100%;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 420px;
+    text-align: center;
+    color: white;
+  }
+  .header__title {
+    font-family: 'Lato_Bold', sans-serif; 
+    text-transform: uppercase;
+    font-size: 40px;}
+  .header__discription {
+    font-family: 'Lato_Reg', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;}
+
+
+.second {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  position: relative;
+  width: 800px;
+  text-align: center;
+  color: black;
+  border: 2px black solid;
+  
+}
+.about__us {
+  position: absolute;
+  margin: 0 auto;
+  left: 225px;
+  top: -23px;
+  background-color: white;
+  padding: 0 100px;
+  font-family: 'Lato_Bold', sans-serif; 
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.about__disc {
+  padding: 40px 150px;
+  font-family: 'Lato_Light', sans-serif;
+}
+
+
+.third {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/services.png);
+}
+
+.services {
+  position: relative;
+  width: 800px;
+  text-align: center;
+  color: white;
+  border: 2px black solid;
+  border-top: 0px;
+}
+.services:before,
+.services:after
+{
+  display: block;
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 2px;
+  background: #000000;
+  top: 0;
+}
+
+.services:before
+{
+  left: 0;
+}
+
+.services:after
+{
+  right: 0;
+}
+
+
+.services__title {
+  position: absolute;
+  margin: 0 auto;
+  left: 225px;
+  top: -23px;
+  padding: 0 100px;
+  font-family: 'Lato_Bold', sans-serif; 
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.services__disc {
+  font-family: 'Lato_Light', sans-serif;
+  padding: 40px 150px;
+  width: 500px;
+  margin: 0;
+
+}
