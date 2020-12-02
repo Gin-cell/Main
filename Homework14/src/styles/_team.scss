@@ -1,0 +1,35 @@
+body{
+    font-family: $Font;
+    font-size: $Base_fs;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100px;
+}
+.header{    
+    text-align: center;
+    margin-bottom: 40px;
+    &__title{
+        font-size: $Title_color;
+        font-family: Raleway-Medium, sans-serif;
+        color: $Title_color;
+    }
+    &__subtitle{
+        font-size: $Base_fs + 44px;
+        color: $second_color;
+        font-family: roboto-black, sans-serif;
+    }
+    &__separator{
+        @extend .separator;
+        &:before{
+            width: 400px;
+        }
+    }
+}
+.bonfire{
+    width: 18px;
+    height: 18px;
+    color: $second_color;
+    vertical-align: middle;
+}

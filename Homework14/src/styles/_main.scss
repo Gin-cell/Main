@@ -1,0 +1,131 @@
+.main{
+display: flex;
+width: 100%;
+    &__photo{
+        width:50%;
+        text-align: center;
+        position: relative;
+        .photo__container{
+            width: $ImgSize;
+            height: $ImgSize;
+            background:
+            linear-gradient(to right, $second_color 1px, transparent 1px) 0 0,
+            linear-gradient(to right, $second_color 1px, transparent 1px) 0 100%,
+            linear-gradient(to left, $second_color 1px, transparent 1px) 100% 0,
+            linear-gradient(to left, $second_color 1px, transparent 1px) 100% 100%,
+            linear-gradient(to bottom, $second_color 1px, transparent 1px) 0 0,
+            linear-gradient(to bottom, $second_color 1px, transparent 1px) 100% 0,
+            linear-gradient(to top, $second_color 1px, transparent 1px) 0 100%,
+            linear-gradient(to top, $second_color 1px, transparent 1px) 100% 100%;
+            
+            background-repeat: no-repeat;
+            background-size: $SeparatorWidth $SeparatorWidth;
+            margin-top: 90px; 
+        }
+        .main__img{
+            border: 1px solid $second_color;
+            margin-top: 14px;
+    
+            @extend .separator;
+            &:before{
+                display: block;
+            }
+        }
+    }
+    
+    &__info{
+        width:50%;
+        text-align: center;
+        border-left: 1px solid $second_color;
+        padding-top: 90px;
+    }
+    &__next,&__prev{
+        position: absolute;
+        color: $second_color;  
+        font-size: $Base_fs + 6px; 
+        font-weight: 1400;
+    } 
+    &__prev{
+        top: 56%;
+        left:-40px;
+    }  
+    &__next{
+        top: 56%;
+        right:-100%;
+    }  
+
+}
+
+.details{
+&__separator{
+
+    @extend .separator;
+    &:before{
+        display: none;
+    }
+    &:after{
+        width:$SeparatorWidth;     
+    }
+            }
+&__separator--lower{
+    @extend .separator;
+    &:before{
+        display: none;
+    }
+    &:after{
+        width:$SeparatorWidth / 2; 
+        border-top: 4px dashed $second_color;
+    }
+                        }            
+&__name{
+    font-family: roboto-black,sans-serif;
+    font-size: $Base_fs+20px;
+    color: $MainColor;
+}
+&__position{
+    font-family: Raleway-Regular,sans-serif;
+    font-size: $Base_fs + 8px;
+    color: $MainColor;
+}   
+&__descr{
+    font-family: Raleway-Medium,sans-serif;
+    font-size: $Base_fs - 2px;
+    line-height: 1.71em;
+    color: #333333;
+} 
+&__social{
+    display: flex;
+    justify-content: space-around;
+    width:135px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+} 
+&__social>a{
+    color:$Social_color;
+    position: relative;
+    margin: 30px;
+}      
+&__separator,&__position,&__social,&__descr{
+    margin-bottom: $Margin_bottom;
+    margin-top: 0;
+}
+
+}
+.icon{
+    width:15px;
+}
+.view{
+    width: 125px;
+    border: 1px solid $second_color;
+    background-color: inherit;
+    text-align: center;
+    margin-top: 25px;
+    &__name{
+        font-family: OpenSans-Bold;
+        font-size: $Base_fs - 2px;
+        color: $MainColor;
+    }
+}
+.view:hover{background-color: red;}
+.view:active{background-color: gray;}

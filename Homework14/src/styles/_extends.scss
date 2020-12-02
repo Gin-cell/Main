@@ -1,0 +1,26 @@
+.separator{
+    &:before,&:after{
+        content:'';
+        width: 200px;
+        height:1px;
+        border-top: 1px solid $second_color;
+        margin: 0 auto;
+        display: inline-block;
+    }   
+}
+.footer{
+    &__navitems{
+        &:after{
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top:0px;
+            left:0px;
+            background-color: $second_color;
+        }
+    }
+}
+
+
