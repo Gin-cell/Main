@@ -1,0 +1,43 @@
+.servicesg {background-image: url(img/bg3.png);}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 265px;
+    height: 744px;
+}
+
+.column__services {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.column__services:not(:first-child) {
+    margin-top: 20px;
+}
+
+.services__column {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Raleway-Bold', sans-serif;
+}
+
+.services__icon {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-left: 1px #9d9d9d solid;
+}
+
+.icon {
+    width: 47px;
+    height: 43px;
+}
