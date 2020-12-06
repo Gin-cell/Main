@@ -20,6 +20,7 @@ body {
 
 .container {
   background-image: url(img/bg1.jpg);
+  background-size: 100% 110%;
   height: 1000px;
   margin: 0 auto;
 }
@@ -32,9 +33,12 @@ body {
   height: 147px;
 }
 .header__logo {
-  margin-left: 165px;
+  margin-left: 12%;
   font-family: "Pacific", sans-serif;
   font-size: 50px;
+}
+.header__nav {
+  margin-right: 11%;
 }
 
 .nav {
@@ -52,16 +56,22 @@ body {
 .nav__item:last-child > .nav__link {
   margin-right: 0;
 }
-.nav__item:last-child {
-  margin-right: 165px;
-}
 .nav__link:hover {
   border-top: 4px solid #ff6033;
+}
+@media screen and (max-width: 960px) {
+  .nav {
+    flex-wrap: wrap;
+    padding-right: 0%;
+  }
+  .nav__item .nav__link {
+    margin: 0 10px;
+  }
 }
 
 .title {
   max-width: 370px;
-  margin-left: 165px;
+  margin-left: 12%;
   margin-top: 216px;
   margin-bottom: 35px;
 }
@@ -88,6 +98,7 @@ body {
 
 .container-about {
   background-image: url(img/bg2.jpg);
+  background-size: 100% 100%;
   max-width: 1530px;
   height: 700px;
   margin: 0 auto;
@@ -113,13 +124,14 @@ body {
 
 .servicesg {
   background-image: url(img/bg3.png);
+  background-size: 100% 100%;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 265px;
+  margin-left: 16%;
   height: 744px;
 }
 .column__services {
@@ -247,6 +259,7 @@ body {
 .Contact {
   background-image: url(img/img.jpg);
   background-size: 100% 100%;
+  max-width: 100%;
 }
 
 .Cheader {
@@ -275,31 +288,35 @@ body {
 }
 
 .form__user {
+  position: relative;
   border: 0px;
-  margin-right: 170px;
+  margin-right: 16%;
+  margin-left: 16%;
   padding: 0;
+  max-width: 504px;
 }
 
 input {
-  position: relative;
   background-color: #00c4c4;
-  width: 492px;
+  width: 99%;
   height: 44px;
   border: 0px;
   opacity: 0.5;
   padding-left: 10px;
+  margin: 10px 0;
 }
 
 #info {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #00c4c4;
-  width: 492px;
+  width: 99%;
   height: 44px;
   border: 0px;
   opacity: 0.5;
   padding-top: 10px;
   padding-left: 10px;
   height: 250px;
+  margin-bottom: 50px;
 }
 
 ::placeholder {
@@ -314,6 +331,7 @@ input:hover, input:focus, #info:focus, #info:hover {
 .company {
   font-family: "Raleway-Bold";
   text-transform: uppercase;
+  margin-right: 16%;
 }
 
 span {
@@ -353,5 +371,12 @@ span {
 .love {
   color: red;
   font-family: "Raleway-Bold", sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  #info {
+    height: 100px;
+    margin-bottom: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

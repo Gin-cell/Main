@@ -1,6 +1,7 @@
 body {margin: 0%;}
 .container {
     background-image: url(img/bg1.jpg);
+    background-size: 100% 110%;
     height: 1000px;
     margin: 0 auto;
 }
@@ -13,9 +14,12 @@ body {margin: 0%;}
     height: 147px;
 
     &__logo {
-        margin-left: 165px;
+        margin-left: 12%;
         font-family: 'Pacific', sans-serif;
         font-size: 50px;
+    }
+    &__nav {
+        margin-right: 11%;
     }
 }
 .nav {
@@ -30,13 +34,21 @@ body {margin: 0%;}
         text-decoration: none;
     }
     &__item:last-child>&__link {margin-right: 0;}
-    &__item:last-child {margin-right: 165px;}
     &__link:hover {border-top: 4px solid #ff6033;}
+
+    @media screen and (max-width: 960px) {
+        flex-wrap: wrap;
+        padding-right: 0%;
+        &__item &__link {
+            margin: 0 10px;
+            }
+        }
 }
+
 
 .title {
     max-width: 370px;
-    margin-left: 165px;
+    margin-left: 12%;
     margin-top: 216px;
     margin-bottom: 35px ;
     &__title {
@@ -64,6 +76,7 @@ body {margin: 0%;}
 
 .container-about {
     background-image: url(img/bg2.jpg);
+    background-size: 100% 100%;
     max-width: 1530px;
     height: 700px;
     margin: 0 auto;
