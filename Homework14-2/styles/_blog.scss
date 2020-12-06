@@ -33,18 +33,31 @@
         position: relative;
         background-image: url(img/14566505949330.jpg);
         background-size: cover;
+        background-size: 100% 110%;
         width: 30%;
+        @include _768 {
+            width: 25%; height: 210px;
+        }
     }
     .Blog__block2 {
         position: relative;
         background-image: url(img/15305696805860.png);
+        background-size: 100% 110%;
         width: 30%;
+        @include _768 {
+            width: 25%; height: 210px;
+        }
     }
     .Blog__block3 {
         position: relative;
         background-image: url(img/15845533242350.jpg);
         background-size: cover;
+        background-size: 100% 110%;
         width: 30%;
+        @include _768 {
+            width: 25%;
+            height: 210px;
+        }
     }
 }
 
@@ -81,4 +94,7 @@
     color: white;
     font-weight: 100;
     opacity: 0.7;
+    @include _768 {
+        top: 290px;
+    }
 }
