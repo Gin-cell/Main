@@ -1,7 +1,6 @@
 body {margin: 0%;}
 .container {
     background-image: url(img/bg1.jpg);
-    max-width: 1500px;
     height: 1000px;
     margin: 0 auto;
 }
@@ -10,35 +9,29 @@ body {margin: 0%;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1500px;
+    max-width: 100%;
     height: 147px;
-}
-.header__logo {
-    margin-left: 165px;
-    font-family: 'Pacific', sans-serif;
-    font-size: 50px;
-}
 
+    &__logo {
+        margin-left: 165px;
+        font-family: 'Pacific', sans-serif;
+        font-size: 50px;
+    }
+}
 .nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0px;
     font-family: 'Raleway-Bold', sans-serif;
-}
-
-.nav__item .link {
-    margin: 0 25px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav__item:last-child>.link {margin-right: 0;}
-
-.nav__item:last-child {margin-right: 165px;}
-
-.link:hover {
-    border-top: 4px solid #ff6033;
+    &__item &__link {
+        margin: 0 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &__item:last-child>&__link {margin-right: 0;}
+    &__item:last-child {margin-right: 165px;}
+    &__link:hover {border-top: 4px solid #ff6033;}
 }
 
 .title {
@@ -46,26 +39,27 @@ body {margin: 0%;}
     margin-left: 165px;
     margin-top: 216px;
     margin-bottom: 35px ;
-}
-.title__title {
-    font-family: 'Raleway-Heavy', sans-serif;
-    font-size: 41px;
-}
-.discription {
-    font-family: 'Raleway-Light', sans-serif;
-    font-size: 13px;
-    margin: 0;
-}
-button {
-    width: 300px;
-    height: 55px;
-    padding: 0px;
-    border: 0px;
-    margin-top: 30px;
-    background-color: #ff6033;
-    color: white;
-    text-transform: uppercase;
-    font-size: 18px;
+    &__title {
+        font-family: 'Raleway-Heavy', sans-serif;
+        font-size: 41px;
+    }
+    .discription {
+        font-family: 'Raleway-Light', sans-serif;
+        font-size: 13px;
+        margin: 0;
+    }
+    .buy {
+        width: 300px;
+        height: 55px;
+        padding: 0px;
+        border: 0px;
+        margin-top: 30px;
+        background-color: #ff6033;
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
 }
 
 .container-about {
@@ -79,14 +73,14 @@ button {
 }
 
 .about {
-    width: 500px;
+    max-width: 500px;
     height: 285px;
     margin-right: 165px;
     margin-bottom: 234px;
+    &__title {
+        font-family: 'Raleway-Bold', sans-serif;
+        font-size: 64px;
+        color: white;
+    }
+    &__discription {color: white;}
 }
-.about__title {
-    font-family: 'Raleway-Bold', sans-serif;
-    font-size: 64px;
-    color: white;
-}
-.about__discription {color: white;}

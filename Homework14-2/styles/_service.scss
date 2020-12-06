@@ -1,24 +1,22 @@
 .servicesg {background-image: url(img/bg3.png);}
 
-.main__wrapper {
+.column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 265px;
     height: 744px;
-}
-
-.column__services {
-    display: flex;
-    width: 400px;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-}
-
-.column__services:not(:first-child) {
-    margin-top: 20px;
+    &__services {
+        display: flex;
+        width: 400px;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    &__services:not(:first-child) {
+        margin-top: 20px;
+    }
 }
 
 .services__column {

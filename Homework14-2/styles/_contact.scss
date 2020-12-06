@@ -3,24 +3,24 @@
     background-size: 100% 100%;
 }
 
-.Contact__header {
+.Cheader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .Cheader__title {
-    font-family: 'Raleway-Bold', sans-serif;
-    font-size: 66px;
-    width: 365px;
-    text-align: center;
-    padding-top: 70px;
-  }
-  .Cheader__discription {
-    font-family: "Raleway-Light";
-    width: 365px;
-    text-align: center;
-    padding-bottom: 50px;
+    &__title {
+      font-family: 'Raleway-Bold', sans-serif;
+      font-size: 66px;
+      width: 365px;
+      text-align: center;
+      padding-top: 70px;
+    }
+    &__discription {
+      font-family: "Raleway-Light";
+      width: 365px;
+      text-align: center;
+      padding-bottom: 50px;
+    }
   }
 
   .form {
