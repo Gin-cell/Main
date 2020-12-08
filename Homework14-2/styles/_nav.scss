@@ -41,6 +41,8 @@
     overflow: hidden;
     -webkit-transition: all .3s ease;
     flex-direction: column;
+    position: absolute;
+    right: 100px;
   }
     input[type="checkbox"]:checked + .nav{
     height: 205px;
