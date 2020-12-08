@@ -14,42 +14,67 @@
   font-family: "Raleway-Light";
   src: url(fonts/Raleway-Light.ttf);
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+.header__nav label {
+  position: absolute;
+  top: 4.3em;
+  right: 73px;
+  cursor: pointer;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.header__nav span {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.header__nav span:hover {
+  background: rgba(255, 255, 255, 0.6);
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+.header__nav span:before,
+.header__nav span:after {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: 0.5em;
+  top: 4px;
+  left: 0;
+  background: black;
 }
 
-.topnav .icon {
+.header__nav span:after {
+  top: 14px;
+}
+
+.hidden-desktop {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
+#open {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    flex-direction: column;
   }
 
-  .topnav a.icon {
-    float: right;
+  input[type=checkbox]:checked + .nav {
+    height: 205px;
+  }
+
+  .nav > li {
+    padding: 0;
+    display: block;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  }
+
+  .hidden-desktop {
     display: block;
   }
 }
