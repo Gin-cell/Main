@@ -40,3 +40,17 @@
     width: 47px;
     height: 43px;
 }
+
+@include _440 {
+    .column {
+        height: 464px;
+    }
+    .column__services {
+        width: 205px;
+        height: 77px;
+    }
+    .services__icon {
+        width: 65px;
+        height: 55px;
+    }
+}

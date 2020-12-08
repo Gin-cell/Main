@@ -97,3 +97,36 @@ body {margin: 0%;}
     }
     &__discription {color: white;}
 }
+
+@include _440 {
+    .container {
+        height: 464px;
+    }
+    .title {
+        margin: 0 auto;
+        width: 200px;
+        padding-right: 40%;
+        &__title {
+            margin: inherit;
+        }
+    }
+    .buy {
+        max-width: 200px;
+    }
+
+
+    .container-about {
+        height: 464px;
+        background-image: none;
+        background-color: #00B2B2;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about {
+        margin: 0 30px;
+        &__title {
+            margin: 0 auto;
+        }
+    }
+}

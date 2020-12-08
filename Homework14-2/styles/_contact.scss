@@ -114,4 +114,31 @@
       height: 100px;
       margin-bottom: 200px;
     }
+  }
+
+  @include _440 {
+    .Contact {
+      height: 464px;
     }
+    .Cheader__title {
+      padding: 0px;
+    }
+    .Cheader__discription {
+      padding: 0px;
+    }
+    .form__user {
+      margin-right: 5%;
+      margin-left: 14%;
+    }
+    #info {
+      margin: 0px;
+    }
+    .company {
+      margin-right: 0%;
+    }
+    .footer>span {
+      font-size: 14px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
