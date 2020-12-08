@@ -282,6 +282,11 @@ body {
     height: 55px;
   }
 }
+@media screen and (max-width: 960px) {
+  .column__services {
+    width: 77%;
+  }
+}
 .blog {
   background-color: blueviolet;
 }

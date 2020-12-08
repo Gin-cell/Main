@@ -54,3 +54,10 @@
         height: 55px;
     }
 }
+
+@include _768 {
+    .column__services {
+        width: 77%;
+        
+    }
+}
