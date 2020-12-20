@@ -1,0 +1,84 @@
+.tourist {
+    background-image: url(/dist/img/image5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__title {
+        color: white;
+        margin-bottom: 100px;
+        margin-top: 120px;
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        font-size: 36px;
+    }
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    background-color: #333333;
+    color: white;
+    margin-left: 18.344%;
+    margin-right: 18.344%;
+    margin-bottom: 200px;
+
+    
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__about {
+        margin-left: 6%;
+        margin-top: 6%;
+    }
+    &__author {
+        font-family: $Base_font;
+        font-size: 20px;
+    }
+    &__text {
+        @include text;
+        margin-top: 6%;
+        margin-right: 6%;
+    }
+}
+
+.fas {
+    color: $Base_Color;
+    margin-right: 10px;
+}
+
+
+@include _1210 {
+    .review {
+    flex-direction: column;
+    margin-bottom: 60px;
+        &__img {
+            width: inherit;
+            margin: 0 auto;
+        }
+        &__about {
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        &__text {
+            margin: 0 auto;
+            margin: 25px;
+        }
+    }
+    
+}
+
+@include _576 {
+    .tourist__title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

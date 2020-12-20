@@ -1,0 +1,90 @@
+.header { 
+    max-width: 100%;
+    background-image: url(/dist/img/Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: $Base_size + 34px;
+        text-transform: uppercase;
+        letter-spacing: 11px;
+        margin-bottom: 0;
+    }
+    &__motto {
+        font-family: $Base_font;
+        font-weight: 200;
+        font-size: $Base_size+8px;
+        letter-spacing: 9px;
+        margin-bottom: 54px;
+        margin-top: 5px;
+    }
+}
+
+.search {display: inherit; width: 36.723%; height: 60px; min-width: 368px; }
+.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border: 1px solid white;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    font-family: $Base_font;
+    font-weight: 200;
+    font-size: $Base_size;
+    letter-spacing: 2px;
+ }
+
+.search button {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background: $Base_Color;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid white;
+    border-left: none; 
+    cursor: pointer;
+
+  }
+  
+ .search button:hover {
+    background: $Base_Color;
+  }
+  
+
+  .search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  @include _576 {
+    .search {
+      min-width: 268px;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 13px;
+      letter-spacing: 0px;
+   }
+   .header__title {
+    letter-spacing: 0px;
+  }
+   .header__motto {
+     letter-spacing: 0px;
+   }
+  }

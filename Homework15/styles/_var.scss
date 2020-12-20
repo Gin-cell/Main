@@ -1,0 +1,46 @@
+$Base_Color: #5474fd;
+$Base_size: 14px;
+$Base_font: 'Josefin Sans', sans-serif;
+
+@mixin button {
+    background-color: $Base_Color;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-family: 'Aleo', serif;
+    font-size: $Base_size+2px;
+    font-weight: 400;
+    border: 0px;
+}
+
+@mixin text {
+    font-family: $Base_font;
+    font-weight: 200;
+    color: #e8e8e8;
+    font-size: $Base_font + 2px;
+}
+
+
+@mixin _1210 {
+    @media screen and (max-width: 1210px) {
+        @content;
+    }
+}
+
+@mixin _1020 {
+    @media screen and (max-width: 1020px) {
+        @content;
+    }
+}
+
+@mixin _768{
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _576{
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

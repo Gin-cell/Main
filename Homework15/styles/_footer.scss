@@ -1,0 +1,41 @@
+.footer {
+    background-color: #232323;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.fcontainer {
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 50px;
+
+    &__logo {
+        font-size: 24px;
+        font-family: $Base_font;
+        margin: 0px;
+        padding-bottom: 17px;
+    }
+    &__motto {
+        margin: 0px;
+        margin-bottom: 32px;
+    }
+}
+
+.containerlink>a {
+ padding: 0 10px;
+ color: white;
+}
+.containerlink>a:hover {
+    color: $Base_Color;
+}
+
+@include _576 {
+    .fcontainer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

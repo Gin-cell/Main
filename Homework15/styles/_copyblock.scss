@@ -1,0 +1,83 @@
+.hotel {
+    background-image: url(/dist/img/image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    display: flex;
+    align-items: center;
+}
+.island {
+    background-image: url(/dist/img/image4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content {margin-left: 30px; margin-right: 34px;}
+
+.message {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18.344%;
+    margin-top: 230px;
+    margin-bottom: 100px;
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+
+    &__Spain {
+        padding-top: 50px;
+        font-family: $Base_font;
+        font-weight: 400;
+    }
+    &__Madrid {
+        font-family: $Base_font;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__disc {
+        @include text;
+    }
+    &__book {
+        @include button;        
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+.island>.message {
+    margin-left: 0;
+    margin-right: 18.344%;
+}
+
+@include _576 {
+    .island, .hotel {
+        justify-content: center;
+    }
+    .island>.message {
+        margin-right: 0%;
+    }
+    .message {
+        width: 50%;
+        margin-left: 0%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        &__book {
+            width: 80%;
+        }
+    }
+    .content { 
+        margin: 0;
+        text-align: center;
+    }
+    .steps__advice {
+        font-size: 3vw;
+    }
+
+}
