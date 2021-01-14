@@ -68,8 +68,15 @@ alert( message );*/
             break;
     }*/
 
-    let amount = prompt('Покупка на');
+   /* let amount = prompt('Покупка на');
     let msg = (amount >=200 && amount < 300) ? alert(amount/100*97 + 'Гривны с 3% скидкой') :
                 (amount >=300 && amount < 500) ? alert(amount/100*95 + 'Гривны с 5% скидкой') :
                 (amount >=500) ? alert(amount/100*93 + 'Гривны с 7% скидкой') : 
-                'Ну чет ты разошелся';
+                'Ну чет ты разошелся'; */
+
+
+                let date = prompt('День-месяц-год (дефис обязательно, костыль)');
+                date = date.split('-');
+                let oldDate = new Date(date[2], date[1]-1, date[0]); 
+                oldDate.setDate(oldDate.getDate()+1);
+                alert(oldDate);

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Pacific";
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url(fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: "Raleway-Heavy";
+    src: url(fonts/Raleway-Heavy.ttf);
+}
+@font-face {
+    font-family: "Raleway-Light";
+    src: url(fonts/Raleway-Light.ttf);
+}
+body {background-color: #f9f8fb;}
+.container {
+    background-image: url("img/bg.jpg");
+    max-width: 1500px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    height: 147px;
+}
+.header__logo {
+    margin-left: 165px;
+    font-family: 'Pacific', sans-serif;
+    font-size: 50px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    font-family: 'Raleway-Bold', sans-serif;
+}
+
+.nav__item .link {
+    margin: 0 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__item:last-child>.link {margin-right: 0;}
+
+.nav__item:last-child {margin-right: 165px;}
+
+.link:hover {
+    border-top: 4px solid #ff6033;
+}
+
+.title {
+    max-width: 370px;
+    margin-left: 165px;
+    margin-top: 216px;
+    margin-bottom: 35px ;
+}
+.title__title {
+    font-family: 'Raleway-Heavy', sans-serif;
+    font-size: 41px;
+}
+.discription {
+    font-family: 'Raleway-Light', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+button {
+    width: 300px;
+    height: 55px;
+    padding: 0px;
+    border: 0px;
+    margin-top: 30px;
+    background-color: #ff6033;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.bot-container {
+    background-image: url("img/bg_bot.jpg");
+    max-width: 1500px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.about {
+    width: 500px;
+    height: 285px;
+    margin-right: 165px;
+    margin-bottom: 234px;
+}
+.about__title {
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: 64px;
+    color: white;
+}
+.about__discription {color: white;}
