@@ -179,14 +179,14 @@ function print() {
 }
 
 function choose(needed) {
-  /* for (i = 0; i<auditory.length; i++) {
-    if (auditory[i].department = needed) {
-      console.log(auditory[i].name, '\n', 'Количество :' + auditory[i].amount, '\n' + 'Факультет :' + auditory[i].department)
-    } break;
-  }  */
-  let departmentNeed = auditory.find(x => x.department === needed).name
+     for (i = 0; i<auditory.length; i++) {
+    if (auditory[i].department == needed) {
+      console.log(auditory[i].name , '\n', 'Количество :' + auditory[i].amount, '\n' + 'Факультет :' + auditory[i].department )
+    } 
+  }  
+  /* let departmentNeed = auditory.find(x => x.department === needed).name
   
-  console.log(departmentNeed);
+  console.log(departmentNeed); */
 }
 
 /* print(); */
