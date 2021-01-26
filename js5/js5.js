@@ -188,7 +188,30 @@ function choose(needed) {
   
   console.log(departmentNeed); */
 }
+  function sorting() {
+    auditory.sort(function (a, b) {
+      return a.amount - b.amount;
+    })
+  }
+
+  function compare( a, b ) {
+    if ( a.name < b.name ){
+      return -1;
+    }
+    if ( a.name > b.name ){
+      return 1;
+    }
+    return 0;
+  }
+  
+
 
 /* print(); */
 
-choose('IT');
+/* choose('IT'); */
+
+/* sorting();
+print(); */
+
+auditory.sort( compare );
+  print();
