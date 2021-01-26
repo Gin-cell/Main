@@ -78,9 +78,12 @@ push();
 change();  */
 
 
+
 //////////////////////
 
- let bill = [
+
+
+/*  let bill = [
       {
         name : 'potato', 
         amount : 5,
@@ -132,18 +135,60 @@ function getMax() { //Самый дорогой товар, как вытащи�
 }
 
 
-/* Math.max.apply(Math, bill.map(function(o) { return o.price; }))
-console.log(); */
-  /* for (i=0; i<bill.length; i++) {
-    let maximum = bill[i].price.reduce(function(a, b) {
-      return Math.max(a, b);
-    })
-    console.log(maximum);
-  } */
-/*   var max = bill.price.reduce(function(a, b) {
-    return Math.max(a, b);
-  }); */ //Я пытался так, но тут неработает(
 
 
 print();
-getMax();
+getMax(); */
+
+
+
+///////////////////
+
+
+
+let auditory = [
+    {
+      name : 'Math', 
+      amount : 10,
+      department : 'physical and mathematical'
+    },
+
+    {
+      name : 'Presentation', 
+      amount : 20,
+      department : 'Office'
+    },
+
+    {
+      name : 'Labaratories', 
+      amount : 15,
+      department : 'IT'
+    },
+
+    {
+      name : 'English language', 
+      amount : 14,
+      department : 'philology'
+    }
+]
+
+function print() {
+  for (i = 0; i<auditory.length; i++) { 
+    console.log(auditory[i].name, '\n', 'Количество :' + auditory[i].amount, '\n' + 'Факультет :' + auditory[i].department);
+  }
+}
+
+function choose(needed) {
+  /* for (i = 0; i<auditory.length; i++) {
+    if (auditory[i].department = needed) {
+      console.log(auditory[i].name, '\n', 'Количество :' + auditory[i].amount, '\n' + 'Факультет :' + auditory[i].department)
+    } break;
+  }  */
+  let departmentNeed = auditory.find(x => x.department === needed).name
+  
+  console.log(departmentNeed);
+}
+
+/* print(); */
+
+choose('IT');
