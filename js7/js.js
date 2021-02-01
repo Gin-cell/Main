@@ -1,4 +1,4 @@
-var playList = [
+/* var playList = [
     {
       author: "LED ZEPPELIN",
       song: "STAIRWAY TO HEAVEN"
@@ -45,4 +45,34 @@ var playList = [
     pBtn.append(playList[i].song);
     li.append(pBtn);
     ul.append(li);
-  }
+  } */
+
+const mainDiv = document.getElementById("content");
+const btn = document.createElement("button");
+const p = document.createElement("p");
+
+p.textContent = "Open";
+
+btn.append(p);
+
+mainDiv.append(btn);
+
+btn.addEventListener("click", () => {
+  const div = document.createElement("div");
+  div.setAttribute("id", "modal__div");
+  const p = document.createElement("p");
+  p.textContent = "Noting to read here, just close it";
+  div.append(p);
+
+  const hidden = document.createElement("button");
+  const hiddenP = document.createElement("p");
+  hiddenP.textContent = "Close";
+  hidden.append(hiddenP);
+  div.append(hidden);
+  mainDiv.append(div);
+  btn.disabled = true;
+  hidden.addEventListener("click", () => {
+    div.remove();
+    btn.disabled = false;
+  });
+});
