@@ -36,7 +36,7 @@ function getInputValue(){
                 var btn = document.createElement("BUTTON");
                 btn.innerHTML = "Details";  
                 btn.id = "BTN";
-
+                btn.className = "btn"// Додали клас
                 item.innerHTML = flist[i].Title + ' ' + flist[i].Year + ' ';
                 
                 films.append(item);
@@ -46,15 +46,14 @@ function getInputValue(){
             }
             
         }   
-        let btncheck = document.getElementById("BTN");
-            for (var i = 0 ; i < flist.length; i++) {
-                if(btncheck) {
-                    btncheck[i].addEventListener('click' , showComment ) ; 
-                } 
-            }
-            function showComment() {
-                console.log("gay")
-            }
+        let btncheck = document.querySelectorAll(".btn");// Маси кнопок з класом btn який додали раніше
+        function showComment() {
+            console.log("gay")
+        }
+        for (var i = 0; i < flist.length; i++) {
+            btncheck[i].addEventListener('click', showComment);
+
+        }
         
      /*    document.getElementById("BTN").addEventListener("click", details);
                     function details(flist) {
