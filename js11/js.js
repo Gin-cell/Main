@@ -47,13 +47,19 @@ function getInputValue(){
             
         }   
         let btncheck = document.querySelectorAll(".btn");// Маси кнопок з класом btn який додали раніше
-        function showComment() {
-            console.log("gay")
-        }
         for (var i = 0; i < flist.length; i++) {
             btncheck[i].addEventListener('click', showComment);
-
         }
+        function showComment() {
+            
+            for (let i = 0; i < flist.length; i++) {
+                let disc = document.createElement('p');
+                disc.innerHTML = (JSON.stringify(flist[i]));
+                document.querySelectorAll("li")[i].append(disc);
+            } 
+        }
+        
+        
         
      /*    document.getElementById("BTN").addEventListener("click", details);
                     function details(flist) {
