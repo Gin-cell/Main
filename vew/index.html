@@ -12,10 +12,10 @@
 <body>
 
     <div id="app">
-        <input :style="styles" @input="changeColor(search.length)" v-model="search" type="text">
+        <input v-model="search" type="text">
         <button @click="saveSearch">Save</button>
         <br>
-        <div v-show="typedSearch">
+        <div :style="styles" @input="changeColor(search.length)" v-show="typedSearch">
             {{typedSearch}}
         </div>
     </div>

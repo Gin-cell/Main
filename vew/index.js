@@ -5,21 +5,22 @@ const sample = new Vue({
         typedSearch: "",
         isTyped: false,
         styles: {
-            background: "red"
+            color: "black"
         }
     },
     methods: {
         saveSearch() {
             this.typedSearch = this.search;
+            this.styles.color = this.search;
             this.search = "";
-            this.styles.background = "red"
         },
-        changeColor(count) {
-            if (count > 0) {
-                this.styles.background = "green"
+        /* changeColor(c) {
+            if (c) {
+                this.styles.color = "c";
             } else {
-                this.styles.background = "red"
+                this.styles.color = "red"
             }
-        }
+        } */
+        
     },
 })
